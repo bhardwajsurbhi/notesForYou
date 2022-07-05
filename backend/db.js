@@ -9,9 +9,9 @@ const mongoURI = 'mongodb+srv://notesForYouDB:iejADU91AZucwca9@cluster0.unof7xn.
 //   }).catch((err) => console.log(`no connection`));
 
 const connectToMongo = ()=>{
-    mongoose.connect(mongoURI, ()=>{
-        console.log("connected to mongo successfully")
-    })
+    mongoose.connect(mongoURI).then(()=>{
+        console.log("connected to mongo successfully");
+    }).catch((err)=> console.log(`no connection`));
 }
 
 module.exports = connectToMongo;

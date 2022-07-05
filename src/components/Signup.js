@@ -10,7 +10,8 @@ const Signup = (props) => {
    const {name, email, password} = credentials; //destructuring (taking values from credentials)
     //using fetch api to hit endpoint
    
-    const response = await fetch("http://localhost:5000/api/auth/createuser" , {
+    //const response = await fetch("http://localhost:5000/api/auth/createuser" , {
+    const response = await fetch("/api/auth/createuser" , {
        
     method: 'POST', 
         headers: {
