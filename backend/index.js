@@ -1,17 +1,17 @@
-// const { connect } = require('mongoose');
+ const { connect } = require('mongoose');
 const mongoose = require('mongoose');
-// const connectToMongo = require('./db');
+ const connectToMongo = require('./db');
 const express = require('express')
 var cors = require('cors')
-const DB = 'mongodb+srv://notesForYouDB:iejADU91AZucwca9@cluster0.unof7xn.mongodb.net/?retryWrites=true&w=majority';
+//const DB = 'mongodb+srv://notesForYouDB:iejADU91AZucwca9@cluster0.unof7xn.mongodb.net/?retryWrites=true&w=majority';
 
 
-mongoose.connect(DB).then(() => {
-  console.log(`connection successful with notesForYouDB`);
-}).catch((err) => console.log(`no connection`));
+// mongoose.connect(DB).then(() => {
+//   console.log(`connection successful with notesForYouDB`);
+// }).catch((err) => console.log(`no connection`));
 
 
-// connectToMongo();
+ connectToMongo();
 const app = express()
 // const port = 5000
 const port = process.env.PORT || 5000;
