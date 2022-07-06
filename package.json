@@ -2,7 +2,7 @@
   "name": "notesforyou",
   "version": "0.1.0",
   "private": true,
-  "proxy" : "http://localhost:5000",
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -19,8 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "both" : "concurrently \"npm run start\" \"nodemon backend/index.js\"",
-    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION = false npm install && npm run build"
+    "both" : "concurrently \"npm run start\" \"nodemon backend/index.js\""
+    
   },
   "eslintConfig": {
     "extends": [
